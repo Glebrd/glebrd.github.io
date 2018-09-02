@@ -17,19 +17,20 @@
         <!-- Подключаем наш файл со стилями, который находится в папке css-->
         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
     </head>
     <body>
         <header>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <img src="img\logo.png" class="header-img" alt="Монитор">
+                        <img src="img\logo.png" class="header-img wow fadeInLeftBig" alt="Монитор">
                     </div>
                     <div class="col-lg-5">
-                        <p class="header-pretitle">Веб-разработчик</p>
-                        <h1 class="header-title">Глеб Долгушин</h1>
-                        <p class="header-subtitle">Верстка на HTML/CSS <br>Разработка сайтов под ключ</p>
-                        <div class="header-button-block">
+                        <p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+                        <h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Глеб Долгушин</h1>
+                        <p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br>Разработка сайтов под ключ</p>
+                        <div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
                             <a class="header-button" href="https://vk.me/grdolgushin">Связаться</a>
                             <small>*Это бесплатно</small>
                         </div>
@@ -40,7 +41,7 @@
         <main>
             <section class="portfolio">
                 <div class="container">
-                    <div class="portfolio-block">
+                    <div class="portfolio-block wow fadeIn" data-wow-delay="0.2s">
                         <h2 class="portfolio-title">Портфолио</h2>
                         <p class="portfolio-subtitle">Мои работы</p>
                         <div class="row">
@@ -81,16 +82,16 @@
                     <div class="col-md-4">
                         <div class="social-block">
                             <p>Подпишитесь:</p>
-                            <a href="#">
-                                <img src="img\socials\fb.png" alt="Facebook" class="social-img">
+                            <a href="#" class="wow bounceInDown" data-wow-delay="0.1s">
+                                <img src="img\socials\fb.png" alt="Facebook">
                             </a>
-                            <a href="https://vk.me/grdolgushin">
+                            <a href="https://vk.me/grdolgushin" class="wow bounceInDown" data-wow-delay="0.2s">
                                 <img src="img\socials\vk.png" alt="Vkontakte">
                             </a>
-                            <a href="#">
+                            <a href="#" class="wow bounceInDown" data-wow-delay="0.3s">
                                 <img src="img\socials\tg.png" alt="Telegram">
                             </a>
-                            <a href="#">
+                            <a href="#" class="wow bounceInDown" data-wow-delay="0.4s">
                                 <img src="img\socials\youtube.png" alt="Youtube">
                             </a>
                         </div>
@@ -104,5 +105,9 @@
                 </div>
             </div>
         </footer>
+        <script src="js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+        </script>
     </body>
 </html>
