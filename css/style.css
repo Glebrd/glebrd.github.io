@@ -51,6 +51,8 @@ header {
   font-family: inherit;
   cursor: pointer;
   transition: .5s;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .header-button:hover {
@@ -192,6 +194,7 @@ footer {
   cursor: pointer;
   font-family: inherit;
   outline: none;
+  text-decoration: none;
 }
 
 .footer-button:hover {
